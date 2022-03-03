@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
+// import Componente1 from './componentes/Componente1'
+import {CompA, CompB as B} from './componentes/DoisComponentes'
+
+const element = document.getElementById('root')
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <div>
+        {/* <Componente1 valor = "A minha soma é " soma = {10+15}/> */}
+        <CompA valor="Aqui é o Componente A"/>
+        <B valor="Aqui é o Componente B"/>
+    </div>,
+    element
+)
