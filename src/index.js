@@ -6,8 +6,10 @@ import ReactDOM from "react-dom"
 // import { Teste1, Teste2, Teste3 } from "./componentes/MultiElementos"
 // import FamiliaGomes from "./componentes/FamiliaGomes"
 // import FamiliaSilva from "./componentes/FamiliaSilva"
-import Familia from "./componentes/Familia"
-import Nome from "./componentes/Nome"
+// import Familia from "./componentes/Familia"
+// import Nome from "./componentes/Nome"
+// import ComponenteComFuncao from "./componentes/ComponenteComFuncao"
+import Pai from "./componentes/Pai"
 
 const element = document.getElementById('root')
 
@@ -27,15 +29,19 @@ ReactDOM.render(
         <h1>Família Silva</h1>
         <FamiliaSilva sobrenome="Silva"/> */}
 
-        <Familia sobrenome="Gomes " endereco="Rua Tal " numero=" 1854" cidade=" Franca" estado=" SP">
+        {/* <Familia sobrenome="Gomes " endereco="Rua Tal " numero=" 1854" cidade=" Franca" estado=" SP">
             <Nome nome="João "/>   
-            {/* <Nome nome="Pedro " sobrenome="Silva"/> */}
-        </Familia>
+            <Nome nome="Pedro "/>
+            <Nome nome="Alexandre "/>
+        </Familia> */}
 
         {/* <Familia>
             <Nome nome="Caio " sobrenome="Cintra"/>
             <Nome nome="Isabela " sobrenome="Cintra"/>
         </Familia> */}
+
+        {/* <ComponenteComFuncao/> */}
+        <Pai/>
 
     </div>,
     element
